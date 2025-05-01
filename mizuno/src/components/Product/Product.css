@@ -1,6 +1,7 @@
 .product-session {
     background-color: #0d0d0d;
     color: #fff;
+    margin-top: -rem;
     position: relative;
 }
 .product-container {
@@ -23,7 +24,7 @@
 }
 .brand-text {
     margin: auto;
-    max-width: 400px;
+    max-width: 300px;
     text-align: center;
 }
 .product-title {
@@ -103,4 +104,70 @@
 }
 .play-button:hover {
     transform: scale(1.05);
+}
+.arrow-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2rem;
+    text-align: center;
+}
+.right-text {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+.navigation-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.container-arrow {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: flex-start;
+    width: 100%;
+
+    @media (max-width: 750px) {
+        justify-content: space-between;
+    }
+}
+.arrow-icon {
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.arrow-icon:hover {
+    background-color: #fff;
+    color: black;
+}
+.background-text {
+    font-size: 120px;
+    font-weight: bold;
+    left: 50%;
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 750px) {
+        font-size: 100px;
+    }
+}
+.blur-circle {
+    background-color: rgb(255, 255, 255, 0.45);
+    border-radius: 50%;
+    filter: blur(100px);
+    height: 500px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+
 }

@@ -1,8 +1,8 @@
 import NavbarMenu from "./definitions";
-import Logo from "../../assets/Balbino.png";
+import Logo from "../../assets/bjs.jpg";
 import { FaRegUserCircle } from "react-icons/fa";
 import { MdOutlineShoppingBag, MdMenu } from "react-icons/md";
-import "../Navbar.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -27,10 +27,7 @@ const Navbar = () => {
             <FaRegUserCircle />
           </div>
 
-          <div className="cart-icon">
-            <MdOutlineShoppingBag />
-            <div className="cart-count">2</div>
-          </div>
+         
 
           <div className="mobile-menu">
             <MdMenu className="hamburger-icon" />
@@ -42,3 +39,9 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+/* <div className="cart-icon">
+            <MdOutlineShoppingBag />
+            <div className="cart-count">2</div>
+          </div>
+          */
